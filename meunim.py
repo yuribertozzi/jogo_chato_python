@@ -44,9 +44,25 @@ def main():
 
     print()
 
-    n = int(input("Qual o número de peças? "))
+    n = 0
 
-    m = int(input("Máximo de peças que pode tirar: ")) 
+    m = 0
+
+    while m == 0 and n == 0:
+
+        n = int(input("Qual o número de peças? "))
+
+        m = int(input("Máximo de peças que pode tirar: "))
+
+        if n == 0 or m == 0 or n < m:
+
+            print()
+            
+            print("Número(s) inválido(s)!")
+
+            n = 0
+
+            m = 0
 
     pcturn = True
 
@@ -110,11 +126,15 @@ def main():
         n = n - play
 
         if n == 1:
+
             
+
             print("Resta uma peça no tabuleiro.")
 
         else:
-         
+
+            
+
             print("Restam", n, "peças no tabuleiro.")
 
 

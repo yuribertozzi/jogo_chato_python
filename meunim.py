@@ -74,7 +74,6 @@ def main():
 
         print("Você começa!")
 
-
     else:
 
         print()

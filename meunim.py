@@ -126,16 +126,12 @@ def main():
 
         if n == 1:
 
-            
-
             print("Resta uma peça no tabuleiro.")
 
         else:
-
-            
-
+          
             print("Restam", n, "peças no tabuleiro.")
-
+#***
 
     if pcturn == True:
 
